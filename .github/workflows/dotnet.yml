@@ -24,8 +24,8 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Log in to Docker Hub
-        uses: actions/login-action@v1
-        with:
+      uses: actions/login-action@v1
+      with:
           image: karthijho2001/demorepo
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
