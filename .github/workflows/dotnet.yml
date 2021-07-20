@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Log in to Docker Hub
-      uses: actions/login-action@v1
+      uses: aws-actions/amazon-ecr-login@v1
       with:
           image: karthijho2001/demorepo
           registry: docker.io
